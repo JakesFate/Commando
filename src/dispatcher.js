@@ -305,7 +305,7 @@ class CommandDispatcher {
 				 * @event CommandoClient#botTalk
 				 * @param {CommandoMessage} message - The message that was sent to the bot
 				 */
-				this.client.emit("botTalk", question);
+				this.client.emit("botTalk", question, message);
 			} else
 				return message.initCommand(
 					this.registry.unknownCommand,
