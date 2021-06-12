@@ -295,7 +295,7 @@ class CommandDispatcher {
 			//Todo fix this later / give seprate function to handle better
 			///////////////////////////////////////////////////////////////
 			if (matches.indexOf(`<@!${this.client.user.id}> `)) {
-				const question = await message.content.replace(
+				const question = message.content.replace(
 					`<@!${this.client.user.id}> `,
 					""
 				);
